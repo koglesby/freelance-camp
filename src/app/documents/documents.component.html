@@ -1,3 +1,13 @@
-<p>
-  documents works!
-</p>
+<h1>{{ pageTitle }}</h1>
+
+<div *ngFor="let doc of documents">
+  <h3>{{ doc.title }}</h3>
+  <em>{{ doc.description }}</em>
+  <div>
+    <a href="{{ doc.file_url }}">Go to File</a>
+  </div>
+  <p>Updated: {{ doc.updated_at }}</p>
+
+  <a href="{{ doc.image_url}}">Image</a>
+  <hr>
+</div>
