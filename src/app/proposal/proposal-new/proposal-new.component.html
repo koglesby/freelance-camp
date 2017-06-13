@@ -14,6 +14,10 @@
         [(ngModel)]="proposal.customer"
       >
     </div>
+
+    <div [hidden]="customer.valid || customer.pristine">
+      Customer name is required
+    </div>
     <div class="form-group">
       <label for="portfolio_url">Portfolio Url</label>
       <input
@@ -24,6 +28,9 @@
         #portfolio_url="ngModel"
         [(ngModel)]="proposal.portfolio_url"
       >
+    </div>
+    <div [hidden]="portfolio_url.valid || portfolio_url.pristine">
+      Portfolio URL is required
     </div>
     <div class="form-group">
       <label for="tools">Tools that you will use on the project</label>
@@ -37,6 +44,9 @@
         [(ngModel)]="proposal.tools"
       >
     </div>
+    <div [hidden]="tools.valid || tools.pristine">
+      A list of tools is required
+    </div>
     <div class="form-group">
       <label for="estimated_hours">Estimates hours to complete</label>
       <input
@@ -48,6 +58,9 @@
         #estimated_hours="ngModel"
         [(ngModel)]="proposal.estimated_hours"
       >
+    </div>
+    <div [hidden]="estimated_hours.valid || estimated_hours.pristine">
+      You must enter the number of estimated hours to complete the project
     </div>
     <div class="form-group">
       <label for="hourly_rate">Hourly Rate</label>
@@ -61,6 +74,9 @@
         [(ngModel)]="proposal.hourly_rate"
       >
     </div>
+    <div [hidden]="hourly_rate.valid || hourly_rate.pristine">
+      An hourly rate is required
+    </div>
     <div class="form-group">
       <label for="weeks_to_complete">Weeks to complete</label>
       <input
@@ -72,6 +88,9 @@
         #weeks_to_complete="ngModel"
         [(ngModel)]="proposal.weeks_to_complete"
       >
+    </div>
+    <div [hidden]="weeks_to_complete.valid || weeks_to_complete.pristine">
+      A number of weeks to complete is required
     </div>
     <div class="form-group">
       <label for="client_email">Client Email <em>(optional)</em></label>
