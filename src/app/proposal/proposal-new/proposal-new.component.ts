@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Proposal } from '../proposal-list/proposal';
+import { Proposal } from '../proposal';
 
 @Component({
   selector: 'app-proposal-new',
