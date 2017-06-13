@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DocumentsComponent } from './documents/documents.component';
 import { ProposalListComponent } from './proposal/proposal-list/proposal-list.component';
 import { ProposalNewComponent } from './proposal/proposal-new/proposal-new.component';
+import { ProposalShowComponent } from './proposal/proposal-show/proposal-show.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProposalNewComponent } from './proposal/proposal-new/proposal-new.compo
     HomepageComponent,
     DocumentsComponent,
     ProposalListComponent,
-    ProposalNewComponent
+    ProposalNewComponent,
+    ProposalShowComponent
   ],
   imports: [
     BrowserModule,
