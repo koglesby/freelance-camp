@@ -6,3 +6,19 @@ body {
 .headline {
   color: white;
 }
+
+input::-webkit-input-placeholder {
+  color: lightgrey !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+  color: lightgrey !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+  color: lightgrey !important;
+}
+
+input:-ms-input-placeholder {
+  color: lightgrey !important;
+}
