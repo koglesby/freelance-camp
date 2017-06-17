@@ -12,6 +12,7 @@ import { ProposalNewComponent } from './proposal/proposal-new/proposal-new.compo
 import { ProposalShowComponent } from './proposal/proposal-show/proposal-show.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DocumentService } from './document.service';
+import { ProposalService } from './proposal.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,10 @@ import { DocumentService } from './document.service';
     HttpModule,
     NgbModule.forRoot()
   ],
-  providers: [DocumentService],
+  providers: [
+    DocumentService,
+    ProposalService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
