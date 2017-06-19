@@ -22,7 +22,6 @@ export class ProposalShowComponent implements OnInit {
   proposal: Proposal;
 
   ngOnInit(): void {
-
     let proposalRequest = this.activatedRoute.params
       .flatMap((params: Params) =>
         this.proposalService.getProposal(+params['id'])
