@@ -5,7 +5,7 @@
     </a>
 
     <span *ngFor="let proposal of proposals" class="list-group-item list-group-item-action flex-column align-items-start">
-      <a routerLink="/proposal/{{proposal.id}}" class="proposal-link list-group-item-action">
+      <a (click)="goToshow(proposal)" class="proposal-link list-group-item-action">
         <div class="d-flex w-100 justify-content-between">
           <h5 class="list-group-item-heading">{{proposal.customer}}</h5>
         </div>
